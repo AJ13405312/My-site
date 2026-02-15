@@ -1,0 +1,121 @@
+body {
+  background: linear-gradient(to bottom right, #0f172a, #1e293b);
+  color: white;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 40px;
+}
+
+.card {
+  max-width: 700px;
+  margin: auto;
+  background: rgba(255,255,255,0.08);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+}
+
+a, h1 { 
+  color: #facc15;
+  border-bottom: 2px;
+}
+
+/* 🌸 Flirty text box */
+.flirty-box {
+  margin-top: 30px;
+  font-size: 1.05rem;
+  color: #f472b6;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#secretMessage {
+  margin-top:15px; 
+  font-size:1.5rem; 
+  color: #fbbf24; 
+  display: none;
+}
+
+.flirty-box:hover {
+  transform: scale(1.05);
+}
+
+/* Heartbeat animation */
+.heartbeat {
+  display: inline-block;
+  animation: fadeSlide 0.8s ease, beat 0.5s ease;
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes beat {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.15); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* 🖤 Footer */
+.site-footer {
+  margin-top: 40px;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.6);
+}
+
+/* 🎵 Music container styling */
+.music-container {
+  margin-top: 20px;
+}
+
+.music-container iframe {
+  border-radius: 15px;
+}
+.aj {
+  width: 100%;
+  border: 2px solid darkorchid;
+  border-radius: 8px;
+}
+.wangari {
+  width: 50%;
+  height: 70%;
+  border: 1px solid #0f172a;
+  border-radius: 8px;
+}
+
+#fig_caption {
+  border: 2px solid #e68ff1;
+  margin-left: 8px;
+  padding: 6px;
+  background: #1e293b;
+  border-radius: 6px;
+}
+
+.m {
+  width: 200px;
+  height: 150px;
+  border: 1px solid #e68ff1;
+  border-radius: 50%;
+  
+}
+
+#fav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+mark {
+  padding-left: 4px;
+  padding-right: 4px;
+  background-color: #9acd32;
+  border: 1px solid #e68ff1;
+  border-radius: 5px;
+}
+
+#s_p {
+  border-bottom: 2px solid beige;
+}

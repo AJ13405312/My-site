@@ -1,0 +1,94 @@
+body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url("images/G.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      backface-visibility: hidden;
+      background-blend-mode: color-dodge;
+      font-family: 'Poppins', sans-serif;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      animation: flirtPop 1.2s ease;
+    }
+
+    @keyframes flirtPop {
+      0% { transform: scale(0.8); opacity: 0; }
+      60% { transform: scale(1.05); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+      animation: float 5s ease-in-out   infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+      100% { transform: translateY(0); }
+    }
+
+    .wink {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+      opacity: 0;
+      animation: tease 2s ease forwards;
+      animation-delay: 1.2s;
+    }
+
+    @keyframes tease {
+      to { opacity: 1; }
+    }
+
+    button {
+      padding: 14px 28px;
+      border: none;
+      border-radius: 30px;
+      background: #ff5f8f;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: pulse 1.8s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.08); }
+      100% { transform: scale(1); }
+    }
+
+    button:hover {
+      transform: scale(1.12);
+      box-shadow: 0 12px 25px rgba(255,95,143,0.6);
+    }
+
+    .kiss {
+      font-size: 1.5rem;
+      margin-top: 15px;
+      animation: kissy 1.5s infinite alternate;
+    }
+
+    @keyframes kissy {
+      from { transform: rotate(-5deg); }
+      to { transform: rotate(5deg); }
+    }
+
+
